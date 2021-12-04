@@ -1,0 +1,49 @@
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anchor Tags</title>
+    <link rel="stylesheet" href="{% static 'tailwind.css' %}">
+</head>
+<body>
+
+  <h1 class=" text-primary text-4xl ">Anchor Tag Example </h1>
+  <br>
+  <h1 class=" text-secondary-200 text-3xl">Steve Jobs</h1>
+
+  <br class=" bg-gray-400">
+
+  <div class=" grid grid-cols-2">
+    <div>
+      
+      <h4 class=" text-xl text-gray-500">Steven Paul Jobs (/dʒɒbz/; February 24, 1955 – October 5, 2011) was an American business magnate, industrial designer, investor, and media proprietor. He was the chairman, chief executive officer (CEO), and co-founder of Apple Inc.; the chairman and majority shareholder of Pixar; a member of The Walt Disney Company's board of directors following its acquisition of Pixar; and the founder, chairman, and CEO of NeXT. Jobs is widely recognized as a pioneer of the personal computer revolution of the 1970s and 1980s, along with his early business partner and fellow Apple co-founder Steve Wozniak.</h4>
+
+      <br>
+      
+      <a href="https://en.wikipedia.org/wiki/Steve_Jobs" class=" text-blue-400 text-lg">Click here for more information</a>
+
+      <br>
+
+      <a href="{% static 'Steve Jobs.pdf' %}" class="text-blue-400 text-lg">His PDF</a>
+
+    </div>
+
+    <div>
+
+      <h1 class=" text-2xl">His Company</h1>
+
+      <a href="https://www.apple.com/" class=" text-blue-400 text-lg"><img src="{% static 'Apple-logo.png' %}" class=" h-80 w-80" alt="Apple Logo"></a>
+
+      <a class=" text-blue-400 text-xl" href="https://gmail.com">Mail</a>
+
+      <br>
+
+      <a class=" text-blue-400 text-lg" href="{% static 'steve.png' %}">His Picture</a>
+
+    </div>
+  </div>
+
+</body>
+</html>
